@@ -30,7 +30,7 @@ A command-line tool written in Python 3 that supermarkets use to keep track of t
 <br>
 <br>
 
->**Note:** Depending on your python installation, install modules with `pip install <module>` or `pip3 install <module>` or; use the absolute path to pip/pip3: `/usr/local/bin/pip install <module>` or `/usr/local/bin/pip3 install <module>`.
+**Note:** Depending on your python installation, install modules with `pip install <module>` or `pip3 install <module>` or; use the absolute path to pip/pip3: `/usr/local/bin/pip install <module>` or `/usr/local/bin/pip3 install <module>`.
 
 <br>
 <br>
@@ -101,7 +101,7 @@ Record sells of products with `sell` and provide `--product-name` and `--price`.
 
 ### **report bought**
 
-Report bought products with `report` and `bought`.
+Report buys of products with `report` and `buys`.
 - `python super.py report bought`
 
 <br>
@@ -109,7 +109,7 @@ Report bought products with `report` and `bought`.
 
 ### **report sold**
 
-Report sold products with `report` and `sold`.
+Report sells of products with `report` and `sells`.
 - `python super.py report sold`
 
 <br>
