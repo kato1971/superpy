@@ -1,7 +1,6 @@
 from classes.Date import Date
 from classes.Buy import Buy
 from classes.Sell import Sell
-# from classes.Report import Report
 from classes.Inventory import Inventory
 from classes.Profit import Profit
 from classes.Revenue import Revenue
@@ -26,11 +25,11 @@ class Router():
             response = Sell(self.args).add()
 
         if self.action == 'report':
-            if self.report == 'bought':
-                response = Buy(self.args).report_bought()
+            if self.report == 'buys':
+                response = Buy(self.args).report_buys()
 
-            if self.report == 'sold':
-                response = Sell(self.args).report_sold()
+            if self.report == 'sells':
+                response = Sell(self.args).report_sells()
 
             if self.report == 'inventory':
                 response = Inventory(self.args).add()

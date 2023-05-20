@@ -30,13 +30,13 @@ class Buy():
         
         return 'OK'
         
-    def report_bought(self):
+    def report_buys(self):
 
-        bought = []
+        buys = []
         with open(bought_path, 'r', encoding='utf-8-sig') as bought_object:
             reader = csv.DictReader(bought_object)
             for row in reader:
-                bought.append(row)
+                buys.append(row)
 
                 table = Table(title='SuperPy Bought', show_header=True, header_style='bright_cyan')
                 table.add_column('Id', style='dim')
@@ -44,7 +44,7 @@ class Buy():
                 table.add_column('Buy Date')
                 table.add_column('Buy Price')
                 table.add_column('Expiration Date')
-                for items in bought:
+                for items in buys:
                     table.add_row(
                         items['id'],
                         items['product_name'],

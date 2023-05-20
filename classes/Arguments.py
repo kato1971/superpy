@@ -16,7 +16,7 @@ class Arguments():
                             )
         parser.add_argument('report',
                             action='store',
-                            choices=['bought', 'sold', 'inventory', 'revenue', 'profit'],
+                            choices=['buys', 'sells', 'inventory', 'revenue', 'profit'],
                             help="the report action to perform: bought, sold, inventory, revenue or profit",
                             metavar='report',
                             nargs='?',
