@@ -1,6 +1,6 @@
 # SuperPy
 
->A command-line tool written in Python 3 that supermarkets use to keep track of their inventory.
+A command-line tool written in Python 3 that supermarkets use to keep track of their inventory.
 
 <br>
 <br>
@@ -40,7 +40,9 @@
 -   `python super.py -h` or `python super.py --help`
 
 ```
-usage: super.py [-h] [--database] [--product-name] [--price] [--expiration-date] [--advance-time] [--now] [--today] [--yesterday] [--date] [--export-format] [action] [report]
+usage: super.py [-h] [--database] [--product-name] [--price] 
+[--expiration-date] [--advance-time] [--now] [--today] [--yesterday] 
+[--date] [--export-format] [action] [report]
 
 Process data
 
@@ -66,7 +68,7 @@ optional arguments:
 
 ### **--advance-time**
 
->The internal conception of what day it is. Use `--advance-time 0` to reset the internal day to today’s date. This option does not require other arguments.
+The internal conception of what day it is. Use `--advance-time 0` to reset the internal day to today’s date. This option does not require other arguments.
 
 - `python super.py --advance-time 0`
 - `python super.py --advance-time 1`
@@ -77,7 +79,7 @@ optional arguments:
 
 ### **buy**
 
->Record buys of products with `buy` and provide `--product-name`, `--price` and `--expiration-date`.
+Record buys of products with `buy` and provide `--product-name`, `--price` and `--expiration-date`.
 
 - `python super.py buy --product-name apple --price 0.75  --expiration-date 2023-06-01`
 - `python super.py buy --product-name cheese --price 5.99 --expiration-date 2023-10-01`
@@ -88,7 +90,7 @@ optional arguments:
 
 ### **sell**
 
->Record sells of products with `sell` and provide `--product-name` and `--price`.
+Record sells of products with `sell` and provide `--product-name` and `--price`.
 
 - `python super.py sell --product-name apple --price 1.15`
 - `python super.py sell --product-name cheese --price 7.95`
@@ -99,7 +101,7 @@ optional arguments:
 
 ### **report bought**
 
->Report bought products with `report` and `bought`.
+Report bought products with `report` and `bought`.
 - `python super.py report bought`
 
 <br>
@@ -107,7 +109,7 @@ optional arguments:
 
 ### **report sold**
 
->Report sold products with `report` and `sold`.
+Report sold products with `report` and `sold`.
 - `python super.py report sold`
 
 <br>
@@ -115,7 +117,7 @@ optional arguments:
 
 ### **report inventory**
 
->Report inventory with `report` and `inventory` and provide an optional time argument `--now`, `--today`, `--yesterday` or `--date <date>`. Use `--export-format <type>` to store the report in the format specified.
+Report inventory with `report` and `inventory` and provide an optional time argument `--now`, `--today`, `--yesterday` or `--date <date>`. Use `--export-format <type>` to store the report in the format specified.
 
 - `python super.py report inventory`
 - `python super.py report inventory --now`
@@ -130,7 +132,7 @@ optional arguments:
 
 ### **report revenue**
 
->Report revenue with `report` and `revenue` and provide a required time argument `--now`, `--today`, `--yesterday` or `--date <date>`.
+Report revenue with `report` and `revenue` and provide a required time argument `--now`, `--today`, `--yesterday` or `--date <date>`.
 
 - `python super.py report revenue --now`
 - `python super.py report revenue --today`
@@ -144,7 +146,7 @@ optional arguments:
 
 ### **report profit**
 
->Report revenue with `report` and `profit` and provide a required time argument `--now`, `--today`, `--yesterday` or `--date <date>`.
+Report revenue with `report` and `profit` and provide a required time argument `--now`, `--today`, `--yesterday` or `--date <date>`.
 
 - `python super.py report profit --now`
 - `python super.py report profit --today`
@@ -157,6 +159,7 @@ optional arguments:
 <br>
 
 ## **Report preview:**
->A table reported with the `rich` module.
+
+A table reported with the `rich` module.
 
 ![Report inventory](./images/markdown/report_inventory.png)
